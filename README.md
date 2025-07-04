@@ -95,10 +95,10 @@ L’utilisation de ces techniques sur des fichiers, systèmes ou images sans aut
 
 Pour cacher un message sur une image tu peux:
 ```bash
-steghide embed -cf cover.jpg -ef secret.txt -p mypassword
+steghide embed -cf <image.jpg> -ef <secret.txt> -p mypassword
 ```
 Et pour le decoder:
 
 ```bash
-steghide extract -sf cover.jpg -p mypassword
+steghide extract -sf <image.jpg> -p mypassword
 ```
