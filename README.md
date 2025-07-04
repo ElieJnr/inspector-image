@@ -90,3 +90,15 @@ Le script appelle la commande `strings` sur le fichier image, récupère toutes 
 
 Ce projet est à but **éducatif uniquement**.
 L’utilisation de ces techniques sur des fichiers, systèmes ou images sans autorisation est illégale.
+
+## Script supplémentaire
+
+Pour cacher un message sur une image tu peux:
+```bash
+steghide embed -cf cover.jpg -ef secret.txt -p mypassword
+```
+Et pour le decoder:
+
+```bash
+steghide extract -sf cover.jpg -p mypassword
+```
